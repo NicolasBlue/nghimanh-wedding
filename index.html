@@ -163,7 +163,7 @@
                 <!-- Countdown -->
                 <div id="countdown" class="section-padding bg-img bg-fixed" style="background-image: url('images/d91a7764480cbe468dc1f8eb94a336c3637df9c921b603468c227dcd01745605-optimize.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center; background-color:#d5d3d3; background-blend-mode: multiply;">
 
-<div class="container" x-data="timer(Date.parse("2025-02-23T10:00:00.000000Z"))" x-init="init();">
+<div class="container" x-data="timer(Date.parse("2025-02-23T10:00:00.000000Z)) x-init="init();">
         <div id="countdown_time" style="display: none">2025-02-23 17:00:00</div>
         <div class="row">
             <div class="section-head col-md-12">
@@ -173,10 +173,10 @@
         <div class="row">
             <div class="col-md-12">
                 <ul>
-                    <li><span id="days" x-text="time().days">31</span>Ngày</li>
-                    <li><span id="hours" x-text="time().hours">8</span>Giờ</li>
-                    <li><span id="minutes" x-text="time().minutes">57</span>Phút</li>
-                    <li><span id="seconds" x-text="time().seconds">60</span>Giây</li>
+                    <li><span id="days" x-text="time().days"></span>Ngày</li>
+                    <li><span id="hours" x-text="time().hours"></span>Giờ</li>
+                    <li><span id="minutes" x-text="time().minutes"></span>Phút</li>
+                    <li><span id="seconds" x-text="time().seconds"></span>Giây</li>
                 </ul>
             </div>
         </div>
